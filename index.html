@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="rain">
+        <div class="drop"></div>
+        <div class="waves">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="splash"></div>
+        <div class="particles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="rain">
+        <div class="drop"></div>
+        <div class="waves">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="splash"></div>
+        <div class="particles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="rain">
+        <div class="drop"></div>
+        <div class="waves">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="splash"></div>
+        <div class="particles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="rain">
+        <div class="drop"></div>
+        <div class="waves">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="splash"></div>
+        <div class="particles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="rain">
+        <div class="drop"></div>
+        <div class="waves">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="splash"></div>
+        <div class="particles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="rain">
+        <div class="drop"></div>
+        <div class="waves">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="splash"></div>
+        <div class="particles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="rain">
+        <div class="drop"></div>
+        <div class="waves">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="splash"></div>
+        <div class="particles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="rain">
+        <div class="drop"></div>
+        <div class="waves">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="splash"></div>
+        <div class="particles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="rain">
+        <div class="drop"></div>
+        <div class="waves">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="splash"></div>
+        <div class="particles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--rules">ℹ️ Rules</button>
+      <!-- Rules button -->
+    </main>
+    <!-- Modal markup -->
+    <div class="modal hidden" id="rulesModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="rules-heading">Rules</h2>
+        <p class="rules-text">
+          The Pig Game is a fun dice game where the objective is to reach 100
+          points before your opponent. On each turn, a player rolls a dice as
+          many times as they want. Each result gets added to their round score.
+          If a player rolls a 1, they lose their current score, and it becomes
+          the next player's turn. The player can also choose to hold, which
+          means that their current score gets added to their total score, and it
+          becomes the next player's turn. The first player to reach 100 points
+          on total score wins the game.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
